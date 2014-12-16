@@ -1,0 +1,103 @@
+#---------------------------------------------
+# TINT2 CONFIG FILE
+#---------------------------------------------
+#
+# Background definitions
+# ID 1 - default/grey
+rounded = 0
+border_width = 0
+background_color = #111111 100
+
+# ID 2 - task active/green
+rounded = 0
+border_width = 0
+background_color = #80a54d 100
+
+# ID 3 - orange/ blink
+rounded = 0
+border_width = 0
+background_color = #ff8d00 100
+
+# ID 4 - gro fir systray
+rounded = 0
+border_width = 0
+background_color = #232323 100
+
+# Panel
+panel_monitor = all
+panel_position = bottom center
+panel_items = TSCB
+panel_size = 100% 26
+panel_margin = 0 0
+panel_padding = 0 0 0
+panel_dock = 0
+wm_menu = 1
+panel_layer = bottom
+panel_background_id = 1
+
+# Taskbar
+taskbar_padding = 0 0 0
+taskbar_background_id = 0
+
+# Tasks
+urgent_nb_of_blink = 20
+task_icon = 1
+task_text = 0
+task_centered = 1
+task_maximum_size = 40 30
+task_padding = 1 1
+task_background_id = 1
+task_active_background_id = 2
+task_urgent_background_id = 3
+task_iconified_background_id = 1
+
+# Task Icons
+task_icon_asb = 70 0 0
+task_active_icon_asb = 100 0 0
+task_urgent_icon_asb = 100 0 0
+task_iconified_icon_asb = 80 0 0
+
+# System Tray
+systray = 1
+systray_padding = 8 2 4
+systray_sort = descending
+systray_background_id = 4
+systray_icon_size = 26
+systray_icon_asb = 100 0 0
+
+# Clock
+time1_format = %a %d. %b » %H:%M
+time1_font = Liberation Sans 11
+clock_font_color = #cccccc 100
+clock_padding = 4 2
+clock_background_id = 1
+clock_lclick_command = gsimplecal
+clock_rclick_command = gsimplecal
+
+# Tooltips
+tooltip = 0
+tooltip_padding = 2 2
+tooltip_show_timeout = 0.0
+tooltip_hide_timeout = 0.0
+tooltip_background_id = 1
+tooltip_font_color = #d8d8d8 100
+tooltip_font = Liberation Sans normal 9.0
+
+# Mouse
+mouse_middle = none
+mouse_right = close
+mouse_scroll_up = toggle
+mouse_scroll_down = iconify
+
+# Battery
+battery = 1
+battery_low_status = 20
+battery_low_cmd = notify-send "battery low"
+battery_hide = 96
+bat1_font = Liberation Sans Bold 11
+bat2_font = Liberation Sans 0
+battery_font_color = #010101 100
+battery_padding = 8 0
+battery_background_id = 2
+
+# End of config
