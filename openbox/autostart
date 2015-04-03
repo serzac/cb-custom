@@ -1,4 +1,4 @@
-## Openbox autostart.sh
+h## Openbox autostart.sh
 ## ====================
 ## When you login to your CrunchBang Openbox session, this autostart script 
 ## will be executed to set-up your environment and launch any applications
@@ -21,9 +21,7 @@
 eval $(gnome-keyring-daemon -s --components=pkcs11,secrets,ssh,gpg) &
 
 ## Set root window colour
-hsetroot -solid "#333333" &
-
-/home/z/bin/autodisplay.bash &
+hsetroot -solid "#111111" &
 
 (sleep 2s && tint2) &
 
@@ -47,8 +45,6 @@ fi
 
 ## Start xscreensaver
 xscreensaver -no-splash &
-
-(sleep 3s && conky -q) &
 
 ## Set keyboard settings - 250 ms delay and 25 cps (characters per second) repeat rate.
 ## Adjust the values according to your preferances.

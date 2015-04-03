@@ -6,7 +6,7 @@
 				<command>terminator</command>
 			</action>
 		</item>
-		<item icon="/home/z/.icons/Faenza/apps/22/firefox.png" label="Firefox">
+		<item icon="/home/z/.icons/Faenza/apps/22/firefox.png" label="Browser">
 			<action name="Execute">
 				<command>firefox</command>
 			</action>
@@ -16,7 +16,7 @@
 				<command>thunar</command>
 			</action>
 		</item>
-		<item icon="/home/z/.icons/Faenza/apps/22/thunderbird.png" label="Email">
+		<item icon="/home/z/.icons/Faenza/apps/22/icedove.png" label="Email">
 			<action name="Execute">
 				<command>icedove</command>
 			</action>
