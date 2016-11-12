@@ -52,3 +52,5 @@ xset r rate 250 25 &
 
 ## Turn on/off system beep
 xset b off &
+
+(sleep 2s && dbus-launch dropbox start)
