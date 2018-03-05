@@ -1,277 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <openbox_menu xmlns="http://openbox.org/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openbox.org/                 file:///usr/share/openbox/menu.xsd">
 	<menu id="root-menu" label="Openbox 3">
-		<item icon="/home/z/.icons/Faenza/apps/22/terminal.png" label="Terminal">
+		<item label="Run Program">
+			<action name="Execute">
+				<command>xfce4-appfinder</command>
+			</action>
+		</item>
+		<item label="Terminal">
 			<action name="Execute">
 				<command>xfce4-terminal</command>
 			</action>
-		</item>
-		<item icon="/home/z/.icons/Faenza/apps/22/firefox.png" label="Browser">
+		</item>		
+
+		<item label="Chromium">
 			<action name="Execute">
-				<command>firefox</command>
+				<command>chromium</command>
 			</action>
 		</item>
-		<item icon="/home/z/.icons/Faenza/apps/22/file-manager.png" label="Filemanager">
+		<item label="Filemanager">
 			<action name="Execute">
 				<command>thunar</command>
 			</action>
 		</item>
-		<item icon="/home/z/.icons/Faenza/apps/22/icedove.png" label="Email">
-			<action name="Execute">
-				<command>thunderbird</command>
-			</action>
+	<separator/>
+		<item label="OB Restart">
+			<action name="Restart"/>
 		</item>
-		<item icon="/home/z/.icons/Faenza/apps/22/geany.png" label="Editor">
-			<action name="Execute">
-				<command>geany</command>
-			</action>
-		</item>
-		<separator/>
-		<menu id="applications" label="Applications">
-			<item label="Gparted">
-				<action name="Execute">
-					<command>gksudo gparted</command>
-				</action>
-			</item>
-			<item label="VLC">
-				<action name="Execute">
-					<command>vlc</command>
-				</action>
-			</item>
-			<item label="Transmission">
-				<action name="Execute">
-					<command>transmission-gtk</command>
-				</action>
-			</item>
-			<item label="FileZilla">
-				<action name="Execute">
-					<command>filezilla</command>
-				</action>
-			</item>
-			<item label="Gigolo">
-				<action name="Execute">
-					<command>gigolo</command>
-				</action>
-			</item>
-			<item label="Xchat">
-				<action name="Execute">
-					<command>xchat</command>
-				</action>
-			</item>
-			<item label="Gimp">
-				<action name="Execute">
-					<command>gimp</command>
-				</action>
-			</item>
-			<item label="AbiWord">
-				<action name="Execute">
-					<command>abiword</command>
-				</action>
-			</item>
-			<item label="Gnumeric">
-				<action name="Execute">
-					<command>gnumeric</command>
-				</action>
-			</item>
-			<item label="Calculator">
-				<action name="Execute">
-					<command>
-						galculator
-					</command>
-				</action>
-			</item>
-			<item label="Firefox">
-				<action name="Execute">
-					<command>/usr/bin/firefox</command>
-				</action>
-			</item>
-		</menu>
-		<separator/>
-		<menu id="settings" label="Settings">
-			<menu id="gmrunconfig" label="gmrun">
-				<item label="Edit config file">
-					<action name="Execute">
-						<command>
-							geany ~/.gmrunrc
-						</command>
-					</action>
-				</item>
-				<separator label="Help?"/>
-				<item label="man page">
-					<action name="Execute">
-						<command>
-							terminator --command=&quot;man gmrun&quot;
-						</command>
-					</action>
-				</item>
-			</menu>
-			<menu id="obConfig" label="Openbox">
-				<item label="Edit menu.xml">
-					<action name="Execute">
-						<command>
-							geany ~/.config/openbox/menu.xml
-						</command>
-					</action>
-				</item>
-				<item label="Edit rc.xml">
-					<action name="Execute">
-						<command>
-							geany ~/.config/openbox/rc.xml
-						</command>
-					</action>
-				</item>
-				<item label="Edit autostart">
-					<action name="Execute">
-						<command>
-							geany ~/.config/openbox/autostart
-						</command>
-					</action>
-				</item>
-				<separator/>
-				<item label="GUI Menu Editor">
-					<action name="Execute">
-						<command>
-							obmenu
-						</command>
-					</action>
-				</item>
-				<item label="GUI Applications Settings Editor">
-					<action name="Execute">
-						<command>
-							obapps
-						</command>
-					</action>
-				</item>
-				<item label="GUI Config Tool">
-					<action name="Execute">
-						<command>
-							obconf
-						</command>
-					</action>
-				</item>
-				<separator/>
-				<item label="Reconfigure">
-					<action name="Reconfigure"/>
-				</item>
-				<item label="Restart">
-					<action name="Restart"/>
-				</item>
-			</menu>
-			<menu id="terminatorconfig" label="Terminator">
-				<item label="Edit config file">
-					<action name="Execute">
-						<command>
-							geany ~/.config/terminator/config
-						</command>
-					</action>
-				</item>
-				<separator label="Help?"/>
-				<item label="man page">
-					<action name="Execute">
-						<command>
-							terminator --command=&quot;man terminator_config&quot;
-						</command>
-					</action>
-				</item>
-			</menu>
-			<menu id="tint2config" label="tint2">
-				<item label="Edit config file">
-					<action name="Execute">
-						<command>
-							geany ~/.config/tint2/tint2rc
-						</command>
-					</action>
-				</item>
-				<item label="Restart tint2">
-					<action name="Execute">
-						<command>
-							tint2restart
-						</command>
-					</action>
-				</item>
-				<separator label="Help?"/>
-				<item label="man page">
-					<action name="Execute">
-						<command>
-							terminator --command=&quot;man tint2&quot;
-						</command>
-					</action>
-				</item>
-				<item label="Online Help">
-					<action name="Execute">
-						<command>
-							x-www-browser http://code.google.com/p/tint2/wiki/Welcome
-						</command>
-					</action>
-				</item>
-			</menu>
-			<menu id="DisplaySettings" label="Display Settings">
-				<item label="ARandR Screen Layout Editor">
-					<action name="Execute">
-						<command>
-						    arandr
-					    </command>
-					</action>
-				</item>
-				<separator label="Help?"/>
-				<item label="man xrandr">
-					<action name="Execute">
-						<command>
-						    terminator --command=&quot;man xrandr&quot;
-					    </command>
-					</action>
-				</item>
-			</menu>
-			<menu id="Notifications" label="Notifications">
-				<item label="settings">
-					<action name="Execute">
-						<command>xfce4-notifyd-config</command>
-					</action>
-				</item>
-			</menu>
-			<item label="User Interface Settings">
-				<action name="Execute">
-					<command>
-						lxappearance
-					</command>
-				</action>
-			</item>
-			<item label="Power Management">
-				<action name="Execute">
-					<command>
-						xfce4-power-manager-settings
-					</command>
-				</action>
-			</item>
-			<item label="Screensaver">
-				<action name="Execute">
-					<command>
-						xscreensaver-demo
-					</command>
-				</action>
-			</item>
-			<item label="Choose Wallpaper">
-				<action name="Execute">
-					<command>
-						nitrogen ~/images/wallpapers/
-					</command>
-				</action>
-			</item>
-			<item label="Login Settings">
-				<action name="Execute">
-					<command>gksudo slimconf</command>
-				</action>
-			</item>
-		</menu>
-		<!--<menu id="help" label="Help" execute="cb-help-pipemenu" />-->
-		<separator/>
-		<item label="Lock Screen">
-			<action name="Execute">
-				<command>
-					bl-lock
-				</command>
-			</action>
-		</item>
+	<separator/>
 		<item label="Exit">
 			<action name="Execute">
 				<command>

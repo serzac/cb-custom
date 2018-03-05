@@ -26,8 +26,8 @@ background_color = #232323 100
 # Panel
 panel_monitor = all
 panel_position = bottom center horizontal
-panel_items = TSCB
-panel_size = 100% 32
+panel_items = TBSC
+panel_size = 100% 28
 panel_margin = 0 0
 panel_padding = 3 0 0
 panel_dock = 0
@@ -101,10 +101,10 @@ battery = 1
 battery_low_status = 20
 battery_low_cmd = notify-send "battery low"
 battery_hide = 96
-bat1_font = Liberation Sans Bold 11
+bat1_font = Liberation Sans 11
 bat2_font = Liberation Sans 0
-battery_font_color = #010101 100
+battery_font_color = #DDDDDD 100
 battery_padding = 8 0
-battery_background_id = 2
+battery_background_id = 4
 
 # End of config

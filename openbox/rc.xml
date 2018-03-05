@@ -40,8 +40,8 @@
                     'Active' - where the active window is -->
   </placement>
   <theme>
-    <name>openbox</name>
-    <titleLayout>LIMC</titleLayout>
+    <name>Arc-Dark</name>
+    <titleLayout>NLC</titleLayout>
     <!--
       avaible characters are NDSLIMC, each can occur at most once.
       N: window icon
@@ -122,9 +122,6 @@
     <firstdesk>1</firstdesk>
     <names>
       <name>»</name>
-      <name>»</name>
-      <name>»</name>
-      <name>»</name>
     </names>
     <popupTime>875</popupTime>
     <!-- The number of milliseconds to show the popup for when switching
@@ -177,74 +174,6 @@
   <keyboard>
     <chainQuitKey>C-g</chainQuitKey>
     <!-- Keybindings for desktop switching -->
-    <keybind key="C-A-Left">
-      <action name="GoToDesktop">
-        <to>left</to>
-        <wrap>no</wrap>
-      </action>
-    </keybind>
-    <keybind key="C-A-Right">
-      <action name="GoToDesktop">
-        <to>right</to>
-        <wrap>no</wrap>
-      </action>
-    </keybind>
-    <keybind key="C-A-Up">
-      <action name="GoToDesktop">
-        <to>up</to>
-        <wrap>no</wrap>
-      </action>
-    </keybind>
-    <keybind key="C-A-Down">
-      <action name="GoToDesktop">
-        <to>down</to>
-        <wrap>no</wrap>
-      </action>
-    </keybind>
-    <keybind key="S-A-Left">
-      <action name="SendToDesktop">
-        <to>left</to>
-        <wrap>no</wrap>
-      </action>
-    </keybind>
-    <keybind key="S-A-Right">
-      <action name="SendToDesktop">
-        <to>right</to>
-        <wrap>no</wrap>
-      </action>
-    </keybind>
-    <keybind key="S-A-Up">
-      <action name="SendToDesktop">
-        <to>up</to>
-        <wrap>no</wrap>
-      </action>
-    </keybind>
-    <keybind key="S-A-Down">
-      <action name="SendToDesktop">
-        <to>down</to>
-        <wrap>no</wrap>
-      </action>
-    </keybind>
-    <keybind key="W-F1">
-      <action name="GoToDesktop">
-        <to>1</to>
-      </action>
-    </keybind>
-    <keybind key="W-F2">
-      <action name="GoToDesktop">
-        <to>2</to>
-      </action>
-    </keybind>
-    <keybind key="W-F3">
-      <action name="GoToDesktop">
-        <to>3</to>
-      </action>
-    </keybind>
-    <keybind key="W-F4">
-      <action name="GoToDesktop">
-        <to>4</to>
-      </action>
-    </keybind>
     <keybind key="W-d">
       <action name="ToggleShowDesktop"/>
     </keybind>
@@ -256,11 +185,6 @@
       <action name="Lower"/>
       <action name="FocusToBottom"/>
       <action name="Unfocus"/>
-    </keybind>
-    <keybind key="A-space">
-      <action name="ShowMenu">
-        <menu>client-menu</menu>
-      </action>
     </keybind>
     <!-- Keybindings for window switching -->
     <keybind key="A-Tab">
@@ -338,7 +262,7 @@
           <enabled>true</enabled>
           <name>Web Browser</name>
         </startupnotify>
-        <command>firefox</command>
+        <command>chromium</command>
       </action>
     </keybind>
     <keybind key="W-c">
@@ -365,7 +289,7 @@
           <enabled>true</enabled>
           <name>Editor</name>
         </startupnotify>
-        <command>subl</command>
+        <command>geany</command>
       </action>
     </keybind>
     <keybind key="W-p">
@@ -375,6 +299,15 @@
           <name>GmRun</name>
         </startupnotify>
         <command>gmrun</command>
+      </action>
+    </keybind>
+    <keybind key="W-a">
+      <action name="Execute">
+        <startupnotify>
+          <enabled>true</enabled>
+          <name>Xfce4-appfinder</name>
+        </startupnotify>
+        <command>xfce4-appfinder</command>
       </action>
     </keybind>
     <keybind key="W-v">
@@ -393,21 +326,6 @@
           <name>Logout</name>
         </startupnotify>
         <command>bl-exit</command>
-      </action>
-    </keybind>
-    <keybind key="W-Tab">
-      <action name="ShowMenu">
-        <menu>client-list-combined-menu</menu>
-      </action>
-    </keybind>
-    <keybind key="W-space">
-      <action name="ShowMenu">
-        <menu>root-menu</menu>
-      </action>
-    </keybind>
-    <keybind key="A-C-q">
-      <action name="ShowMenu">
-        <menu>root-menu</menu>
       </action>
     </keybind>
     <!-- A bit of tiling -->
@@ -916,40 +834,5 @@
 
   # end of the example
 -->
-    <application name="gmessage">
-      <decor>no</decor>
-      <shade>no</shade>
-      <skip_pager>yes</skip_pager>
-      <skip_taskbar>yes</skip_taskbar>
-      <fullscreen>no</fullscreen>
-      <maximized>no</maximized>
-    </application>
-    <application name="uzbl-tabbed">
-      <maximized>yes</maximized>
-    </application>
-    <application class="Gimp" name="gimp" role="gimp-toolbox" type="utility">
-      <maximized>vertical</maximized>
-    </application>
-    <application class="Gimp" name="gimp" role="gimp-dock" type="utility">
-      <maximized>vertical</maximized>
-    </application>
-    <application class="Gimp" name="gimp" role="gimp-image-window" type="normal">
-      <position force="no">
-        <x>center</x>
-        <y>center</y>
-      </position>
-    </application>
-    <application class="Gimp" name="gimp-2.8" role="gimp-toolbox" type="utility">
-      <maximized>vertical</maximized>
-    </application>
-    <application class="Gimp" name="gimp-2.8" role="gimp-dock" type="utility">
-      <maximized>vertical</maximized>
-    </application>
-    <application class="Gimp" name="gimp-2.8" role="gimp-image-window" type="normal">
-      <position force="no">
-        <x>center</x>
-        <y>center</y>
-      </position>
-    </application>
   </applications>
 </openbox_config>
