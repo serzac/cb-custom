@@ -41,7 +41,7 @@
   </placement>
   <theme>
     <name>Arc-Dark</name>
-    <titleLayout>NLC</titleLayout>
+    <titleLayout>NLIMC</titleLayout>
     <!--
       avaible characters are NDSLIMC, each can occur at most once.
       N: window icon
@@ -121,7 +121,7 @@
     <number>1</number>
     <firstdesk>1</firstdesk>
     <names>
-      <name>»</name>
+      <name>Main</name>
     </names>
     <popupTime>875</popupTime>
     <!-- The number of milliseconds to show the popup for when switching
