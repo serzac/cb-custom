@@ -5,14 +5,13 @@
 # Background definitions
 # ID 1 - default/grey
 rounded = 0
-border_width = 0
-background_color = #111111 100
+border_width = 1
+background_color = #dddddd 100
 
 # ID 2 - task active/blue
 rounded = 0
 border_width = 0
 background_color = #758594 100
-font_color = 
 
 # ID 3 - orange/ blink
 rounded = 0
@@ -22,12 +21,12 @@ background_color = #ff8d00 100
 # ID 4 - grey for systray
 rounded = 0
 border_width = 0
-background_color = #343434 100
+background_color = #383838 100
 
 # ID 4 - green for sysinfo
 rounded = 0
-border_width = 1
-background_color = #D9FFA1 100
+border_width = 0
+background_color =  100
 
 # Panel
 panel_monitor = all
@@ -39,7 +38,7 @@ panel_padding = 0 0 0
 panel_dock = 0
 wm_menu = 1
 panel_layer = bottom
-panel_background_id = 1
+panel_background_id = 4
 
 # Taskbar
 taskbar_mode = single_desktop
@@ -48,14 +47,13 @@ taskbar_padding = 0 0 0
 # Tasks
 urgent_nb_of_blink = 3
 task_icon = 1
-task_text = 1
-task_centered = 0
-#task_maximum_size = 120 60
-task_padding = 2 4
-task_background_id = 1
-task_active_background_id = 2
+task_text = 0
+task_centered = 1
+task_maximum_size = 42 36
+task_padding = 6 2
+task_background_id = 4
+task_active_background_id = 1
 task_urgent_background_id = 3
-task_iconified_background_id = 1
 task_font = Liberation Sans 10
 task_font_color = #ffffff 100
 
@@ -64,18 +62,18 @@ task_icon_asb = 100 0 0
 
 # System Tray
 systray = 1
-systray_padding = 0 0 0
+systray_padding = 2 0 2
 systray_sort = descending
 systray_background_id = 4
-systray_icon_size = 28
+systray_icon_size = 24
 systray_icon_asb = 100 0 0
 
 # Clock
-time1_format = %a %d. %b » %H:%M
-time1_font = Liberation Sans 11
-clock_font_color = #cccccc 100
+time1_format = |  %a %d. %b  |  %H:%M
+time1_font = Liberation Sans Bold 10
+clock_font_color = #bbbbbb 100
 clock_padding = 6 2
-clock_background_id = 1
+clock_background_id = 4
 clock_lclick_command = gsimplecal
 clock_rclick_command = gsimplecal
 
@@ -91,18 +89,19 @@ battery = 1
 battery_low_status = 20
 battery_low_cmd = notify-send "battery low"
 battery_hide = 96
-bat1_font = Liberation Sans 10
+bat1_font = Liberation Sans Bold 10
 bat2_font = Liberation Sans 0
-battery_font_color = #DDDDDD 100
-battery_padding = 6 0
+battery_font_color = #bbbbbb 100
+battery_padding = 4 0
 battery_background_id = 4
 
 execp = new
-execp_background_id = 5
-execp_command = df -h | awk '/\/$/ { print " Disk usage: " $5 " | " $4 " Free"}'
+execp_background_id = 4
+execp_command = df -h | awk '/\/$/ { print " " $4 "  |"}'
 execp_interval = 60
 execp_font_color = #111111 100
 execp_padding = 4 0 0
-execp_font = Liberation Sans 10
+execp_font = Liberation Sans Bold 10
+execp_font_color = #bbbbbb 100
 
 # End of config
